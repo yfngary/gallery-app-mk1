@@ -1,40 +1,52 @@
 {
-    "name": "gallery-app-mk1",
-    "version": "0.0.1",
-    "dependencies": {
-        "axios": "^0.26.0",
-        "dotenv": "^16.0.3",
-        "express": "^4.18.2",
-        "knex": "^2.4.2",
-        "msw": "^0.38.2",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "react-scripts": "5.0.0",
-        "sqlite3": "^5.1.6",
-        "styled-components": "^5.3.3"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test --verbose",
-        "eject": "react-scripts eject",
-        "migrate": "knex migrate:latest",
-        "rollback": "knex migrate:rollback",
-        "server": "cd ./backend && nodemon index.js"
-    },
-    "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
+  "name": "gallery-app-mk1",
+  "version": "0.0.1",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "knex": "^2.4.2",
+    "msw": "^0.38.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "sqlite3": "^5.1.6",
+    "styled-components": "^5.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --verbose",
+    "eject": "react-scripts eject",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "server": "cd ./backend && nodemon index.js"
+  },
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "cross-env": "7.0.3",
+    "eslint": "8.14.0",
+    "jest": "28.1.0",
+    "nodemon": "^2.0.20",
+    "supertest": "6.2.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
-    "eslintConfig": {
-        "extends": "react-app"
-    },
-    "devDependencies": {
-        "cross-env": "7.0.3",
-        "eslint": "8.14.0",
-        "jest": "28.1.0",
-        "nodemon": "^2.0.20",
-        "supertest": "6.2.3"
-    }
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
